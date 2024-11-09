@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookFinder</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="search-container">
+        <select id="languageSelector">
+            <option value="">Tous les langages</option>
+            <option value="eng">Anglais</option>
+            <option value="fre">Français</option>
+            <option value="spa">Espagnol</option>
+            <option value="ger">Allemand</option>
+            <!-- Ajoutez d'autres langues au besoin -->
+        </select>
+        <input id="bookFinderInput" type="text" placeholder="Nom, Auteur, date, ...">
+        <button onclick="searchBooks()">Rechercher</button>
+    </div>
+    <div id="bookList" class="book-list"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
+
